@@ -1,0 +1,25 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+CFLAGS="-march=core2 -O2 -pipe -fomit-frame-pointer --param l1-cache-line-size=64 --param l1-cache-size=32 --param l2-cache-size=2048"
+CXXFLAGS="${CFLAGS}"
+MAKEOPTS="-j40 -l3"
+FEATURES="distcc"
+PORTAGE_NICENESS="15"
+# WARNING: Changing your CHOST is not something that should be done lightly.
+# Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
+CHOST="x86_64-pc-linux-gnu"
+# These are the USE and USE_EXPAND flags that were used for
+# buidling in addition to what is provided by the profile.
+USE="bindist ssl -ipv6 -sendmail"
+CPU_FLAGS_X86="mmx mmxext sse sse2 sse3 ssse3 mcx16 msahf"
+PORTDIR="/usr/portage"
+DISTDIR="${PORTDIR}/distfiles"
+PKGDIR="${PORTDIR}/packages"
+VIDEO_CARDS="intel i965"
+GENTOO_MIRRORS="ftp://ftp-stud.hs-esslingen.de/pub/Mirrors/gentoo/ rsync://ftp-stud.hs-esslingen.de/gentoo/ http://ftp-stud.hs-esslingen.de/pub/Mirrors/gentoo/ rsync://ftp.snt.utwente.nl/gentoo http://ftp.snt.utwente.nl/pub/os/linux/gentoo ftp://ftp.snt.utwente.nl/pub/os/linux/gentoo"
+# 
+# DISTCC
+#
+DISTCC_HOSTS=--randomize localhost/2 a.b.c.d a.b.c.e a.b.c.f a.b.c.g
