@@ -172,7 +172,7 @@ If you get to many "IO Errors" or "failed to distribute" during make, you probab
 	user	9m32.270s	8m25.900s	8m14.170s	7m35.300s
 	sys	0m53.320s	0m53.710s	0m52.620s	0m50.240s
 
-### Compiling make + distcc + ccache 
+### Compiling with make + distcc + ccache 
 
 	cmd: make -jN CC="ccache distcc"
 
@@ -186,7 +186,7 @@ If you get to many "IO Errors" or "failed to distribute" during make, you probab
 	user	11m35.120s	10m39.680s	10m14.620s	9m53.620s
 	sys	1m9.480s	1m6.010s	1m6.840s	1m7.400s
 
-### make + distcc + ccache + pump
+### Compiling with make + distcc + ccache + pump
 
 	cmd: pump make -jN CC="ccache distcc"
 
